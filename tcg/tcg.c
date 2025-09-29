@@ -437,7 +437,6 @@ static inline void tcg_sub_out8(TCGContext *s, uint8_t v)
     *sub_buf_ptr++ = v;
     if ((sub_buf_ptr - sub_buf) > SUB_BUF_MAX) {
         printf("buffer too small\n"); fflush(stdout);
-        exit(1);
     }
 }
 
